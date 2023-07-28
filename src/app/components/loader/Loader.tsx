@@ -1,8 +1,14 @@
-import React from 'react'
 import styles from "./loader.module.css"
 
-export default function Loader() {
+interface props{
+  size: string
+}
+
+export default function Loader(props: props) {
   return (
-    <div id="loader" className={styles.loader}></div>
+    <div
+    className={styles.loader}
+    style={{backgroundSize: (props.size !== undefined) ? props.size : "50%"}}
+    ></div>
   )
 }

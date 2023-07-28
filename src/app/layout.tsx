@@ -1,8 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Eagle_Lake } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const eagle_lake = Eagle_Lake({weight: "400", subsets: ["latin"]})
 
 export const metadata: Metadata = {
   title: 'Fantasy Shooter 2',
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={eagle_lake.className}>{children}</body>
     </html>
   )
 }
