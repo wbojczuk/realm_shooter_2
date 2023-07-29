@@ -1,4 +1,4 @@
-import styles from "../mainmenu.module.css"
+import styles from "./mainmenu.module.css"
 import GetData from "../../../lib/getData"
 
 interface propTypes{
